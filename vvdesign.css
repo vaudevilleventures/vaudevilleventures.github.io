@@ -1,0 +1,52 @@
+/* text styles */
+body {background: #ffffff;font-family: 'monteserrat', sans-serif;
+}
+h1{font-size:2em;color:#3F32FF;line-height:0.8em;}
+h2{font-size:1em;color:#434343;line-height:1.5em;}
+p{font-size:1em;color:#434343;line-height:1.5em;}
+.dash{height:1px;width:20px;background-color:#434343;margin-top:3em;margin-bottom:3em;}
+
+/* profiles */  
+.profile{display:inline-block;margin:0px 48px 24px 0px;text-align:center;padding: 16px;}
+.profile:hover{border:4px solid #413FFF;}
+
+
+
+
+/* project thumbnails */  
+.content{background-color:#ffffff; width:80%;margin:8em 0em 0em 2.5em;display: block}
+a.thumbnail{display:inline-block;margin:0em 1em 1em 0em;}
+    
+/* responsive nav section */
+ul.topnav {list-style-type:none;width:100%;position:fixed;top:24px;padding-bottom:32px;}
+/* Float the list items side by side */
+ul.topnav li {float:left;display:block;background-color:#000000;letter-spacing:0.2em;text-align:left;padding:0.5em;margin:0.5em 1em 0em 0em;}
+
+/* Style the links inside the list items */
+ul.topnav li a {font-family: 'Montserrat', sans-serif;font-size:0.8em;display:block ;color:#ffffff;text-decoration:none;transition: 0.9s;}
+
+/* Change background color of links on hover */
+
+ul.topnav li:hover {color: #ffffff;text-decoration: none;background-color:#413FFF;transition: 0.25s}
+ul.topnav li a:hover {text-decoration: none;}
+ul.topnav:hover{background-color: none;}
+ul.topnav li.icon:hover{background-color: #000000;color: #ffffff;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("logo"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav{width:100%}
+  ul.topnav li:not(:first-child) {display:none;}
+  ul.topnav li.icon {position:fixed;right:24px;top:24px;margin-top:24px;padding:7px;display:block;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {width:90%;background-color:#ffffff;}
+  ul.topnav.responsive li.icon {position:fixed;right:24px;top:24px;display:block;}
+  ul.topnav.responsive li {float:bottom;display:block;}
+  ul.topnav.responsive li a {display: block;text-align:left;}
+}
+
