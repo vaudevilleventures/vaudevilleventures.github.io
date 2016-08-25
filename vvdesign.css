@@ -15,7 +15,8 @@ p{font-size:1em;color:#434343;line-height:1.5em;}
 
 /* project thumbnails */  
 .content{background-color:#ffffff; width:80%;margin:8em 0em 0em 2.5em;display: block}
-a.thumbnail{display:inline-block;margin:0em 1em 1em 0em;}
+a.thumbnail{display:inline-block;height:100px;margin:0px 16px 16px 0px;border:4px solid #ffffff;}
+a.thumbnail:hover{display:inline-block;margin:0px 16px 16px 0px;border:4px solid #413FFF;transition:0.1s;}
     
 /* responsive nav section */
 ul.topnav {list-style-type:none;width:100%;position:fixed;top:24px;padding-bottom:32px;}
