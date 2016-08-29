@@ -3,8 +3,8 @@ body {background: #ffffff;font-family: 'monteserrat', sans-serif;
 }
 h1{font-size:2em;color:#3F32FF;line-height:0.8em;}
 h2{font-size:1em;color:#434343;line-height:1.5em;}
-h3{font-size:1em;color:#3F32FF;line-height:1.2em;}/* project type */
-h4{font-size:0.6em;color:#9b9b9b;line-height:0em;padding-top:8px;}/* client name */
+h3{font-size:1em;color:#ffffff;line-height:1.2em;}/* project type */
+h4{font-size:0.6em;color:#ededed;line-height:0em;padding-top:40px;}/* client name */
 h5{font-size:0.6em;color:#9b9b9b;line-height:0em;padding-top:8px;}/* cta */
 p{font-size:0.8em;color:#434343;line-height:1.4em;}
 .dash{height:1px;width:20px;background-color:#434343;margin-top:3em;margin-bottom:3em;}
@@ -18,10 +18,11 @@ p{font-size:0.8em;color:#434343;line-height:1.4em;}
 
 
 /* project thumbnails */  
-.content{background-color:#ffffff; width:80%;margin:8em 0em 0em 2.5em;display: block}
-div.thumbnailcontainer{position:relative;display:inline-block;height:100px;margin:0px 16px 16px 0px;}
-div.thumbnailtext{position:absolute;text-align:center;height:100px;width:100%;color:#434343;background-color:#ffffff;visibility:hidden;opacity:0;}
-.thumbnailcontainer .thumbnailtext:hover{visibility:visible;opacity:1;transition:0.2s;}
+.content{background-color:#ffffff; width:90%;margin:8em 0em 0em 2.5em;display: block}
+div.thumbnail{position:relative;display:inline-block;margin:0px 16px 16px 0px;}
+.title {position:absolute;top:0px;left:0px;bottom:0px;right:0px;text-align: center; border: 4px solid white;background:#3F32FF; transition:0.15s;visibility: hidden;opacity:0;}
+.thumbnail:hover .title{visibility: visible;opacity: 1;border: 4px solid blue;}
+
 
 
 /* responsive nav section */
