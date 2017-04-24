@@ -1,0 +1,82 @@
+
+
+.html{background-color: green;}
+.body{padding:32px;margin:auto;}
+.header{margin-top:96px;}
+.nav{width:100%;}
+
+/* structure*/
+.flex-container{
+  padding:24px 56px 24px 56px;;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.flex-item{}
+
+
+
+/* fontfamily */
+p{font-family: 'Source Sans Pro', sans-serif;color:#434343;}
+/* fontweights*/
+p.fontWeight-xb{font-weight: 700;}
+p.fontWeight-b{font-weight: 600;}
+p.fontWeight-r{font-weight: 400;}
+
+/* fontsizes */
+p.fontSize-xxxxl{font-size:30px;}
+p.fontSize-xxl{font-size:28px;}
+p.fontSize-xl{font-size:24px;}
+p.fontSize-l{font-size:18px;}
+p.fontSize-m{font-size:14px;}
+p.fontSize-s{font-size:12px;}
+p.fontSize-xs{font-size:10px;}
+
+/* alignment*/
+p.fontAlign-left{text-align: left;}
+p.fontAlign-center{text-align: center;}
+p.fontAlign-right{text-align: right;}
+
+/* transformation*/
+p.fontTransfrom-c{ text-transform: capitalize;}
+p.fontTransfrom-l{ text-transform: lowercase;}
+p.fontTransfrom-u{ text-transform: uppercase;}
+
+
+/* color variation*/
+p.fontColor-blue{ color: #317EFC;}
+p.fontColor-orange{ color: #FB9955;}
+p.fontColor-grey{ color: #9b9b9b;}
+
+
+
+/* unvisited link */
+a:link {
+    color: #434343; opacity: 0.8;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #434343; opacity: 0.8;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffffff;opacity: 1.0;
+    background-color: #434343;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
+
+
+
+}
+
+/* selected link */
+a:active {
+    color: #434343;
+    text-decoration: none;
+}
