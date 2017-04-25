@@ -4,7 +4,7 @@
 .body{padding:32px;margin:auto;}
 .header{margin-top:48px;}
 .nav{width:100%;}
-#logo{display:block;margin:auto;height:48px;}
+.logo{display:block;margin:auto;}
 .code{background-color: #ededed;padding:16px;}
 
 /* structure*/
