@@ -1,18 +1,36 @@
 
 
-.html{background-color: green;}
+.html{}
 .body{padding:32px;margin:auto;}
-.header{margin-top:96px;}
+.header{margin-top:48px;}
 .nav{width:100%;}
+#logo{display:block;margin:auto;height:48px;}
+.code{background-color: #ededed;padding:16px;}
 
 /* structure*/
 .flex-container{
-  padding:24px 56px 24px 56px;;
+  padding:24px 56px 24px 56px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
-.flex-item{}
+.flex-item{
+  padding:24px 56px 24px 56px;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  margin-bottom:16px;
+}
+.flex-container-row{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.flex-item-row{
+  padding:24px 40px 24px 0px;
+
+}
+
 
 
 
@@ -24,13 +42,14 @@ p.fontWeight-b{font-weight: 600;}
 p.fontWeight-r{font-weight: 400;}
 
 /* fontsizes */
-p.fontSize-xxxxl{font-size:30px;}
-p.fontSize-xxl{font-size:28px;}
-p.fontSize-xl{font-size:24px;}
-p.fontSize-l{font-size:18px;}
-p.fontSize-m{font-size:14px;}
-p.fontSize-s{font-size:12px;}
-p.fontSize-xs{font-size:10px;}
+p.fontSize-xxxxl{font-size:48px;line-height: 56px;}
+p.fontSize-xxxl{font-size:30px;line-height: 32px;}
+p.fontSize-xxl{font-size:28px;line-height: 32px;}
+p.fontSize-xl{font-size:24px;line-height: 32px;}
+p.fontSize-l{font-size:18px;line-height: 24px;}
+p.fontSize-m{font-size:14px;line-height: 16px;}
+p.fontSize-s{font-size:12px;line-height: 16px;}
+p.fontSize-xs{font-size:10px;line-height: 16px;}
 
 /* alignment*/
 p.fontAlign-left{text-align: left;}
@@ -38,15 +57,28 @@ p.fontAlign-center{text-align: center;}
 p.fontAlign-right{text-align: right;}
 
 /* transformation*/
-p.fontTransfrom-c{ text-transform: capitalize;}
-p.fontTransfrom-l{ text-transform: lowercase;}
-p.fontTransfrom-u{ text-transform: uppercase;}
+p.fontTransform-c{ text-transform: capitalize;}
+p.fontTransform-l{ text-transform: lowercase;}
+p.fontTransform-u{ text-transform: uppercase;}
 
 
-/* color variation*/
+/* font color variation*/
 p.fontColor-blue{ color: #317EFC;}
 p.fontColor-orange{ color: #FB9955;}
 p.fontColor-grey{ color: #9b9b9b;}
+
+
+
+
+/* color variation */
+.swatch {width: 72px;height:72px;border: 1px solid #ededed;padding:16px;}
+.swatch.color-mediumgrey{background-color: #9b9b9b;}
+.swatch.color-darkgrey{background-color: #434343;}
+.swatch.color-lightgrey{background-color: #ededed;}
+.swatch.color-blue{background-color: #317efc;}
+.swatch.color-orange{background-color: #fb9955;}
+
+
 
 
 
