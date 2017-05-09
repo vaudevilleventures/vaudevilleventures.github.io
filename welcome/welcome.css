@@ -7,7 +7,7 @@
 .flex-container{
   margin: 24px 56px 24px 56px;
   padding:56px;
-  width:auto;
+  height:30%;
   border: 1px solid #ededed;
   display: flex;
   flex-wrap:wrap;
@@ -21,6 +21,7 @@
 .flex-item_3 {width:240px;}
 
 .fish{height:240px;width: auto;}
+.container{height:240px;width: auto;}
 
 
 /* responsive */

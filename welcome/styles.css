@@ -1,0 +1,244 @@
+
+/* general setup */
+html{font-size: 14px;
+font-family: 'Inconsolata', monospace;
+max-width: 100%;
+overflow: hidden;}
+body{padding:32px;margin:auto;}
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+
+/* fontstyles */
+h1{
+  font-family: 'Prompt', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0em;
+  color: #434343;
+  margin: 0px;
+}
+
+
+p{
+    font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  line-height: 1.6em;
+  letter-spacing: 0em;
+  color: #434343;
+  margin: 0px;
+}
+
+h2{
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0.3em;
+  letter-spacing: 0em;
+  font-style: italic;
+}
+
+
+
+
+/* cta styles */
+
+
+button{
+  padding: 0.5em 1em;
+  background: #ff5500;
+  border:1px solid #ff5500;
+
+}
+button p{
+  color:white;
+}
+
+
+
+ul{
+	padding:0;
+	margin: 0;
+}
+
+
+li{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+
+
+
+/* unvisited link */
+a:link {
+    color: #434343; opacity: 0.8;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #434343; opacity: 0.8;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffffff;opacity: 1.0;
+    background-color: #ff5000;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
+
+}
+
+/* selected link */
+a:active {
+    color: #ff5000;
+    text-decoration: none;
+}
+
+/* main container */
+#main{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+  align-items: center;
+}
+
+
+
+/* logo */
+.header{margin-top:2em;}
+.nav{width:100%;}
+
+
+
+.content{
+	width:90vw;
+  height:66vh;
+	display: flex;
+  flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border:1px solid #ededed;
+  padding: 2em 1em 2em 1em;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+
+.content:hover{
+    border:1px solid #ff5000;
+}
+
+
+/* wrapper for display info in a row*/
+.wrapper{
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding:0em 3em;
+  
+
+  
+}
+.left{
+  max-width:10em;
+  display: flex;
+  flex-flow: column wrap;
+
+
+}
+
+.right{
+  width:20em;
+  display: flex;
+  flex-flow: column wrap;
+
+
+}
+
+
+
+
+
+/* bottom nav*/
+.bottomnav{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center
+}
+
+
+.bottomnav_left	p{
+	padding: 0.2em 2em;
+	text-align: left;
+}
+
+.bottomnav_right p{
+	padding: 0.2em 2em;
+	text-align: right;
+}
+
+
+
+/* fish element*/
+
+.fish{height:240px;width: auto;}
+
+
+/* subway graphic element*/
+.subway{
+    
+  padding:0.5em;
+}
+.subway .yellow{
+  background:#F0C209;
+    padding:0.25em 0.6em;
+  width: 1em;
+  height:0em;
+ margin: 0.1em;
+  border-radius: 5em;
+  text-align: center;
+  color:#434343;
+  font-family: 'Inconsolata', monospace;
+  font-size:1em;
+
+}
+
+.subway .green{
+  background:#00943C;
+   padding:0.25em 0.6em;
+  width: 1em;
+  height:0em;
+  margin: 0.1em;
+  border-radius: 5em;
+  text-align: center;
+  color:#ededed;
+  font-family: 'Inconsolata', monospace;
+  font-size:1em;
+
+}
+
+.subway .blue{
+  background:#2850AD;
+   padding:0.25em 0.6em;
+  width: 1em;
+  height:0em;
+  margin: 0.1em;
+  border-radius: 5em;
+  text-align: center;
+  color:#ededed;
+  font-family: 'Inconsolata', monospace;
+  font-size:1em;
+
+}
+
+
+
