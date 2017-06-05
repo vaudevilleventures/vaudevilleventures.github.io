@@ -16,23 +16,6 @@ function main()
     document.body.appendChild(buttonLoadFile);
 }
 
-function getURL()
-{
-    var filesSelected = document.getElementById("inputFileToLoad").files;
-    if (filesSelected.length > 0)
-    {
-        var fileToLoad = filesSelected[0];
-
-        if (fileToLoad.type.match("image.*"))
-        {
-            var fileReader = new FileReader();
-	    fileReader.readAsArrayBuffer(fileToLoad);
-	    if (fileReader.readyState == 2){
-		var recievedFile = fileReader.result; 
-	    	hi
-	    }
-}	    
-
 function loadImageFileAsURL()
 {
     var filesSelected = document.getElementById("inputFileToLoad").files;
