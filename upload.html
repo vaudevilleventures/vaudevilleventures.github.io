@@ -1,21 +1,48 @@
-<html>
-	<header> 
-		<h1> Upload Files </h1>
-	</header>
+<style type="text/css">
+</style>
 
-	<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi"
-enctype="multipart/form-data" method="post">
-<p>
-Type some text (if you like):<br>
-<input type="text" name="textline" size="30">
-</p>
-<p>
-Please specify a file, or a set of files:<br>
-<input type="file" name="datafile" size="40">
-</p>
-<div>
-<input type="submit" value="Send">
-</div>
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+
+<body>
+<rt/form-data">
+<input id="upload" type=file   accept="text/html" name="files[]" size=30>
 </form>
 
-</html>
+<textarea class="form-control" rows=35 cols=120 id="ms_word_filtered_html"></textarea>
+
+<script>
+function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // use the 1st file from the list
+    f = files[0];
+
+    var reader = new FileReader();
+
+    // Closure to capture the file information.
+    reader.onload = (function(theFile) {
+        return function(e) {
+
+          jQuery( '#ms_word_filtered_html' ).val( e.target.result );
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsText(f);
+  }
+
+  document.getElementById('upload').addEventListener('change', handleFileSelect, false);
+</script>body>
+	<form action = "index.php" method="post" enctype="multipart/form-data"
+		<label for="file">Choose a file:</label>
+		<input type="file" name="file1"/>
+		<input type="submit" value="Send!"/>
+	<form action = "index.php" method="post" enctype="multipart/form-data"
+		<label for="file">Choose a file:</label>
+		<input type="file" name="file1"/>
+		<input type="submit" value="Send!"/>
