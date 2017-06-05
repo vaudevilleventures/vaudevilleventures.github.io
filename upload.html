@@ -10,7 +10,7 @@
 
 <body>
 <rt/form-data">
-<input id="upload" type=file   accept="text/html/jpeg/gif" name="files[]" size=30>
+<input id="upload" type=file   accept="text/html/image/*" name="files[]" size=30>
 </form>
 
 <script>
@@ -35,4 +35,4 @@ function handleFileSelect(evt) {
   }
 
   document.getElementById('upload').addEventListener('change', handleFileSelect, false);
-</script>body>
+</script>
