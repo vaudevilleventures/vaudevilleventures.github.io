@@ -1,38 +1,45 @@
-<style type="text/css">
-</style>
-
-
-<script type="text/javascript">
-
-</script>
-
-</head>
-
+<html>
 <body>
-<rt/form-data">
-<input id="upload" type=file   accept="text/html/image/*" name="files[]" size=30>
-</form>
 
-<script>
-function handleFileSelect(evt) {
-    var files = evt.target.files; // FileList object
+<script type='text/javascript'>
 
-    // use the 1st file from the list
-    f = files[0];
+function main()
+{
+    var inputFileToLoad = document.createElement("input");
+    inputFileToLoad.type = "file";
+    inputFileToLoad.id = "inputFileToLoad";
+    document.body.appendChild(inputFileToLoad);
 
-    var reader = new FileReader();
+    var buttonLoadFile = document.createElement("button");
+    buttonLoadFile.onclick = loadImageFileAsURL;
+    buttonLoadFile.textContent = "Load Selected File";
+    document.body.appendChild(buttonLoadFile);
+}
 
-    // Closure to capture the file information.
-    reader.onload = (function(theFile) {
-        return function(e) {
+function loadImageFileAsURL()
+{
+    var filesSelected = document.getElementById("inputFileToLoad").files;
+    if (filesSelected.length > 0)
+    {
+        var fileToLoad = filesSelected[0];
 
-          jQuery( '#ms_word_filtered_html' ).val( e.target.result );
-        };
-      })(f);
+        if (fileToLoad.type.match("image.*"))
+        {
+            var fileReader = new FileReader();
+            fileReader.onload = function(fileLoadedEvent) 
+            {
+                var imageLoaded = document.createElement("img");
+                imageLoaded.src = fileLoadedEvent.target.result;
+                document.body.appendChild(imageLoaded);
+            };
+            fileReader.readAsDataURL(fileToLoad);
+        }
+    }
+}
 
-      // Read in the image file as a data URL.
-      reader.readAsText(f);
-  }
+main();
 
-  document.getElementById('upload').addEventListener('change', handleFileSelect, false);
 </script>
+
+</body>
+</html>
