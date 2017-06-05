@@ -1,8 +1,8 @@
 <html>
 <body>
 
-<!--casuallylanding--><a href="workinprogress.html"><div class="thumbnail"><img src="" height="160px">
-  <span class="title"><h4>CASUAL</h4><h3>Landing Page</h3></span></div></a>
+<!--casuallylanding--><a href="workinprogress.html"><div class="thumbnail"><img src="getURL()" height="160px">
+  <span class="title"><h4>CASUAL</h4><h3>Landing Page</h3></span></div></a>i
 
 <script type='text/javascript'>
 
@@ -16,7 +16,22 @@ function main()
     var buttonLoadFile = document.createElement("button");
     buttonLoadFile.onclick = loadImageFileAsURL;
     buttonLoadFile.textContent = "Load Selected File";
-    //document.body.appendChild(buttonLoadFile);
+    document.body.appendChild(buttonLoadFile);
+}
+
+function getURL()
+{
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
 }
 
 function loadImageFileAsURL()
@@ -36,7 +51,8 @@ function loadImageFileAsURL()
                 document.body.appendChild(imageLoaded);
             };
             fileReader.readAsDataURL(fileToLoad);
-        }
+       		
+	 }
     }
 }
 
