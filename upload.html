@@ -38,6 +38,25 @@ function loadImageFileAsURL()
     }
 }
 
+function getFile()
+{
+    var filesSelected = document.getElementById("inputFileToLoad").files;
+    if (filesSelected.length > 0)
+    {
+        var fileToLoad = filesSelected[0];
+
+        if (fileToLoad.type.match("image.*"))
+        {
+            var fileReader = new FileReader();
+            fileReader.onload = function(fileLoadedEvent) 
+            {
+                fileReader.readAsArrayBuffer(fileToLoad);
+                var receivedFile = fileReader.result; 
+            };
+       	
+	      }
+    }
+}
 main();
 
 </script>
