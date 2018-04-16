@@ -1,0 +1,17 @@
+<html>
+
+<div id="signature-preview"><div id="preview-name" style="padding-bottom: 5px; color: #F7751F; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">John Doe</div>
+                    <div id="preview-job-title" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><i>Businessman</i></div>
+                    <div id="preview-department" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Sales Department</div>
+                    <div id="preview-company-name" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><strong>John Doe Ltd</strong></div>
+                    <div class="preview-phone" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><span style="display: inline-block; width: 20px; color: #F7751F;">p:</span><span id="preview-office-phone">02 1234 5678</span>&nbsp;&nbsp;<span style="display: inline-block; width: 20px; color: #F7751F;">m:</span><span id="preview-mobile-phone">0412 345 678</span></div>
+                    <div class="preview-fax" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><span style="display: inline-block; width: 20px; color: #F7751F;">f:</span><span id="preview-office-fax">02 1234 8765</span></div>
+                    <div class="preview-address-l1" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><span style="display: inline-block; width: 20px; color: #F7751F;">a:</span><span id="preview-address-1">5 Something St</span></div>
+                    <div class="preview-address-l2" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><span style="display: inline-block; width: 20px; color: #F7751F;">&nbsp;</span><span id="preview-address-2">Somewhere NSW 2000</span></div>
+                    <div class="preview-web-email" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><span style="display: inline-block; width: 20px; color: #F7751F;">w:</span><span id="preview-website"><a href="http://www.example.com" style=" color: #1da1db; text-decoration: none; font-weight: normal;">www.example.com</a></span>&nbsp;&nbsp;<span style="display: inline-block; width: 20px; color: #F7751F;">e:</span><span id="preview-email"><a href="mailto:john.doe@example.com" style="color: #1da1db; text-decoration: none; font-weight: normal;">john.doe@example.com</a></span></div>
+                    <div class="preview-image-url" style="padding-bottom: 8px; padding-top: 5px;"><img id="preview-image-url" src="//cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/avatar_sig.png?t=1513707742797"></div>
+                    <div class="preview-social-icons"><img id="facebook-icon" src="//cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/facebook_sig.png?t=1513707742797">&nbsp;&nbsp;<img id="twitter-icon" src="//cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/twitter_sig.png?t=1513707742797">&nbsp;&nbsp;<img id="linkedin-icon" src="//cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/linkedin_sig.png?t=1513707742797">&nbsp;&nbsp;<img id="instagram-icon" src="//cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/instagram_sig.png?t=1513707742797"></div>
+                </div>
+
+                </body>
+        <html>
