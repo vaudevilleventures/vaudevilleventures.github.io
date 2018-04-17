@@ -1,80 +1,79 @@
-/* text styles */
-body {background: #ffffff;font-family: 'monteserrat', sans-serif;
-}
-h1{font-size:2em;color:#3F32FF;line-height:1.2em;}/* big title */
-h2{font-size:1em;color:#434343;line-height:1.2em;}/* sub title */
-h3{font-size:1em;color:#ffffff;line-height:1.2em;}/* project type */
-h4{font-size:0.6em;color:#ededed;line-height:0em;padding-top:40px;}/* client name */
-h5{font-size:1em;color:#9b9b9b;line-height:0em;padding-top:8px;}/* project sections */
-p{font-size:0.8em;color:#434343;line-height:1.4em;}
-.cta{text-decoration:none;} .cta :hover{color:#3F32FF;transition:0.3s;text-decoration:none;}
-
-/* body */
-body{min-height:100%;}
-/* footer */
-footer {position:absolute;right:0;bottom:0;left:0;padding:1em;background-color:#fafafa;}
-.footeritems{padding-left:1em;}
-.footerlink{font-size:0.8em;color:#9b9b9b;text-decoration: inherit;margin-left: 2px;margin-right:1px;} 
-.footerlink:hover{color:#3F32FF;transition:0.3s;}
-
-
-/* profiles */  
-.profile{width:240px;display:inline-block;vertical-align:top;margin:0px 24px 24px 0px;text-align:center;padding: 16px;border:4px solid #ffffff;}
-.profile:hover{border:4px solid #413FFF;}
-.profileintern{width:240px;display:inline-block;margin:0px 24px 24px 0px;vertical-align:top;text-align:center;padding: 16px;border:4px solid #ffffff;}
-.profileintern:hover{border:4px solid #413FFF;}
-
-
-
-/* project thumbnails */  
-.navigation{position:absolute;top:0.4em; left:0.4em;display:block;z-index:1;}
-.content{width:90%;display: block;padding: 6em 0 0 3em}
-.thumbnail{position:relative;display:inline-block;margin:0px 16px 16px 0px;}
-.title {position:absolute;top:0px;left:0px;bottom:0px;right:0px;text-align: center; border: 4px solid white;background:#3F32FF; transition:0.15s;visibility: hidden;opacity:0;}
-.thumbnail:hover .title{visibility: visible;opacity: 1;border: 4px solid blue;}
-
-
-
-/* responsive nav section */
-ul.topnav {list-style-type:none;width:100%;position:fixed;padding-bottom:32px;}
-/* Float the list items side by side */
-ul.topnav li {display:block;float:left;background-color:#000000;letter-spacing:0.2em;text-align:left;padding:0.5em;margin:0em 1em 0em 0em;}
-
-/* Style the links inside the list items */
-ul.topnav li a {font-family: 'Montserrat', sans-serif;font-size:0.8em;display:block ;color:#ffffff;text-decoration:none;transition: 0.9s;}
-
-/* Change background color of links on hover */
-
-ul.topnav li:hover {color: #ffffff;text-decoration: none;background-color:#413FFF;transition: 0.25s}
-ul.topnav li a:hover {text-decoration: none;}
-ul.topnav:hover{background-color: none;}
-ul.topnav li.icon:hover{background-color: #000000;color: #ffffff;}
-
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
-
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("logo"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
-  ul.topnav{width:100%}
-  ul.topnav li:not(:first-child) {display:none;}
-  ul.topnav li.icon {position:fixed;right:24px;padding:7px;display:block;}
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {width:90%;background-color:#ffffff;}
-  ul.topnav.responsive li.icon {position:fixed;right:24px;top:24px;display:block;}
-  ul.topnav.responsive li {float:bottom;display:block;}
-  ul.topnav.responsive li a {display: block;text-align:left;}
-}
-
-/* Hide the titles on small screens */
-@media screen and (max-width:680px) {
-.title {display: none;}
-
-
-
-
-
-/* inactive styles */  
-.dash{height:2px;width:16px;background-color:#9b9b9b;margin-top:3em;margin-bottom:3em;}
+ /* text styles */
+ body {background: #ffffff;font-family: 'raleway', sans-serif;
+ }
+ h1{font-size:2em;color:#3F32FF;line-height:1.2em;}/* big title */
+ h2{font-size:1em;color:#434343;line-height:1.2em;}/* sub title */
+ h3{font-size:1em;color:#ffffff;line-height:1.2em;}/* project type */
+ h4{font-size:0.6em;color:#ededed;line-height:0em;padding-top:40px;}/* client name */
+ h5{font-size:1em;color:#9b9b9b;line-height:0em;padding-top:8px;}/* project sections */
+ p{font-size:0.8em;color:#434343;line-height:1.4em;}
+-.cta{text-decoration:none;} .cta :hover{color:#3F32FF;transition:0.3s;text-decoration:none;}
++.cta{text-decoration:none;} .cta :hover{color:#3F32FF;transition:0.5s;text-decoration:none;}
+ 
+ /* body */
+ body{position:relative;margin:0;padding-bottom: 2em;min-height:100%;}
+@@ -20,9 +20,9 @@ footer {position:absolute;right:0;bottom:0;left:0;padding:1em;background-color:#
+ 
+ 
+ /* profiles */  
+-.profile{width:240px;display:inline-block;vertical-align:top;margin:0px 24px 24px 0px;text-align:center;padding: 16px;border:4px solid #ffffff;}
++.profile{width:240px;display:inline-block;vertical-align:top;margin:0px 24px 24px 0px;text-align:center;padding:16px;border:4px solid #ffffff;}
+ .profile:hover{border:4px solid #413FFF;}
+-.profileintern{width:240px;display:inline-block;vertical-align:top;margin:0px 48px 24px 0px;text-align:center;padding: 16px;border:4px solid #ffffff;}
++.profileintern{width:240px;display:inline-block;vertical-align:top;margin:0px 12px 24px 0px;text-align:center;padding:16px;border:4px solid #ffffff;}
+ .profileintern:hover{border:4px solid #413FFF;}
+ 
+ 
+ 
+ /* project thumbnails */  
+ .navigation{position:absolute;display:block;z-index:1;}
+ .content{width:90%;margin:8em 0em 0em 2em;display: block;}
+ div.thumbnail{position:relative;display:inline-block;margin:0px 16px 16px 0px;}
+ .title {position:absolute;top:0px;left:0px;bottom:0px;right:0px;text-align: center; border: 4px solid white;background:#3F32FF; transition:0.15s;visibility: hidden;opacity:0;}
+ .thumbnail:hover .title{visibility: visible;opacity: 1;border: 4px solid blue;}
+ 
+ 
+ 
+ /* responsive nav section */
+ ul.topnav {list-style-type:none;width:100%;position:fixed;top:24px;padding-bottom:32px;}
+ /* Float the list items side by side */
+ ul.topnav li {display:block;float:left;background-color:#000000;letter-spacing:0.2em;text-align:left;padding:0.5em;margin:0.5em 1em 0em 0em;}
+ 
+ /* Style the links inside the list items */
+ ul.topnav li a {font-family: 'Montserrat', sans-serif;font-size:0.8em;display:block ;color:#ffffff;text-decoration:none;transition: 0.9s;}
+ 
+ /* Change background color of links on hover */
+ 
+ ul.topnav li:hover {color: #ffffff; text-decoration: none; background-color:#413FFF; transition: .5s}
+ ul.topnav li a:hover {text-decoration: none;}
+ ul.topnav:hover{background-color: none;}
+ ul.topnav li.icon:hover{background-color: #000000;color: #ffffff;}
+ 
+ /* Hide the list item that contains the link that should open and close the topnav on small screens */
+ ul.topnav li.icon {display: none;}
+ 
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("logo"). Show the list item that contains the link to open and close the topnav (li.icon) */
+ @media screen and (max-width:680px) {
+   ul.topnav{width:100%}
+   ul.topnav li:not(:first-child) {display:none;}
+   ul.topnav li.icon {position:fixed;right:24px;top:24px;margin-top:24px;padding:7px;display:block;}
+ }
+ 
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+ @media screen and (max-width:680px) {
+   ul.topnav.responsive {width:90%;background-color:#ffffff;}
+   ul.topnav.responsive li.icon {position:fixed;right:24px;top:24px;display:block;}
+   ul.topnav.responsive li {float:bottom;display:block;}
+   ul.topnav.responsive li a {display: block;text-align:left;}
+ }
+ 
+ /* Hide the titles on small screens */
+ @media screen and (max-width:680px) {
+ .title {display: none;}
+ 
+ 
+ 
+ 
+ 
+ /* inactive styles */  
+ .dash{height:2px;width:16px;background-color:#9b9b9b;margin-top:3em;margin-bottom:3em;}
