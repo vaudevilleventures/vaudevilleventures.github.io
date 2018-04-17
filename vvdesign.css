@@ -1,5 +1,5 @@
 /* text styles */
-body {background: #ffffff;font-family: 'monteserrat', sans-serif;
+body {background: #ffffff;font-family: 'raleway', sans-serif;
 }
 h1{font-size:2em;color:#3F32FF;line-height:1.2em;}/* big title */
 h2{font-size:1em;color:#434343;line-height:1.2em;}/* sub title */
@@ -10,7 +10,8 @@ p{font-size:0.8em;color:#434343;line-height:1.4em;}
 .cta{text-decoration:none;} .cta :hover{color:#3F32FF;transition:0.3s;text-decoration:none;}
 
 /* body */
-body{position:relative;margin:0;padding-bottom: 12em;min-height:100%;}
+body{position:relative;margin:0;padding-bottom: 2em;min-height:100%;}
+
 /* footer */
 footer {position:absolute;right:0;bottom:0;left:0;padding:1em;background-color:#fafafa;}
 .footeritems{padding-left:1em;}
@@ -21,7 +22,7 @@ footer {position:absolute;right:0;bottom:0;left:0;padding:1em;background-color:#
 /* profiles */  
 .profile{width:240px;display:inline-block;vertical-align:top;margin:0px 24px 24px 0px;text-align:center;padding: 16px;border:4px solid #ffffff;}
 .profile:hover{border:4px solid #413FFF;}
-.profileintern{width:240px;display:inline-block;margin:0px 48px 24px 0px;text-align:center;padding: 16px;border:4px solid #ffffff;}
+.profileintern{width:240px;display:inline-block;vertical-align:top;margin:0px 48px 24px 0px;text-align:center;padding: 16px;border:4px solid #ffffff;}
 .profileintern:hover{border:4px solid #413FFF;}
 
 
@@ -45,7 +46,7 @@ ul.topnav li a {font-family: 'Montserrat', sans-serif;font-size:0.8em;display:bl
 
 /* Change background color of links on hover */
 
-ul.topnav li:hover {color: #ffffff;text-decoration: none;background-color:#413FFF;transition: 0.25s}
+ul.topnav li:hover {color: #ffffff; text-decoration: none; background-color:#413FFF; transition: .5s}
 ul.topnav li a:hover {text-decoration: none;}
 ul.topnav:hover{background-color: none;}
 ul.topnav li.icon:hover{background-color: #000000;color: #ffffff;}
