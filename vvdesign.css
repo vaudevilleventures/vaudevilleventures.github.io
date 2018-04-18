@@ -42,7 +42,7 @@ ul.topnav {list-style-type:none;width:100%;position:fixed;top:24px;padding-botto
 ul.topnav li {display:block;float:left;background-color:#000000;letter-spacing:0.2em;text-align:left;padding:0.5em;margin:0.5em 1em 0em 0em;}
 
 /* Style the links inside the list items */
-ul.topnav li a {font-family: 'Montserrat', sans-serif;font-size:0.8em;display:block ;color:#ffffff;text-decoration:none;transition: 0.9s;}
+ul.topnav li a {font-family: 'Montserrat', sans-serif;font-size:0.8em; font-weight:medium; display:block ;color:#ffffff;text-decoration:none;transition: 0.9s;}
 
 /* Change background color of links on hover */
 
